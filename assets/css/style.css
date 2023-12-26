@@ -1,6 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
-  color: navy;
+  color: #47b2e4;
 }
 
 a {
@@ -167,7 +167,7 @@ h6 {
 }
 
 .navbar ul li a:active {
-  color: white;
+  color: #47b2e4;
 }
 
 .nav .nav .navbar a i,
@@ -179,7 +179,7 @@ h6 {
 
 .navbar ul li a:hover {
   background: transparent;
-  color: navy;
+  color: #47b2e4;
 }
 
 .navbar .getstarted,
@@ -293,15 +293,16 @@ h6 {
 }
 
 .navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  width: 0%;
+  height: 0vh;
   background: white;
-  transition: 0.3s;
-  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar-mobile-on {
+  width: 100%;
   height: 100vh;
 }
 
@@ -321,7 +322,6 @@ h6 {
   padding: 10px 0;
   border-radius: 10px;
   background-color: #fff;
-  overflow-y: auto;
   transition: 0.3s;
 }
 
@@ -450,6 +450,14 @@ h6 {
   #hero {
     height: 100vh;
     text-align: center;
+  }
+
+  .navbar-mobile {
+    background: white;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   #hero .animated {
@@ -2153,7 +2161,6 @@ section {
   .navbar li:hover > a:before,
   .navbar .active:before {
     visibility: visible;
-    transform: scaleX(0.7);
   }
 
   .navbar a:hover,
@@ -3349,7 +3356,7 @@ section {
 }
 
 .features .nav-link.active i {
-  color: navy !important;
+  color: white;
 }
 
 .features .tab-content {
@@ -5103,4 +5110,63 @@ h4 {
   /* Your styles here */
   font-size: 24px;
   color: green;
+}
+
+.mobile-header {
+  width: 100%;
+  height: 60vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0c3c53;
+  z-index: 99999;
+  max-height: 0;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.mobile-header-on {
+  max-height: 60vh;
+}
+
+.mobile-header ul {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.mobile-header ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-header ul li a {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.mobile-header ul li button {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+}
+
+.mobile-header .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
 }
