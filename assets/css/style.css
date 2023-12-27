@@ -1821,7 +1821,9 @@ section {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
+  .main-chat {
+    right: 0vh;
+  }
   #footer .copyright,
   #footer .credits {
     text-align: center;
@@ -5168,11 +5170,11 @@ h4 {
 
 .chat-option {
   position: fixed;
-  bottom: 10vh;
+  bottom: 5vh;
   width: 70px;
   height: 70px;
   background: #209dd8;
-  right: 10vh;
+  right: 5vh;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -5186,11 +5188,11 @@ h4 {
 }
 
 .main-chat {
-  width: 400px;
-  height: 70vh;
+  width: 350px;
+  height: 80vh;
   position: fixed;
-  bottom: 10vh;
-  right: 10vh;
+  bottom: 5vh;
+  right: 5vh;
   background: white;
   box-shadow: 0 0 10px black;
   max-height: 0;
@@ -5200,7 +5202,7 @@ h4 {
 }
 
 .main-chat-on {
-  max-height: 70vh;
+  max-height: 80vh;
 }
 
 .main-chat .top {
@@ -5255,7 +5257,7 @@ form button {
   font-size: 1rem;
   font-weight: 900;
   cursor: pointer;
-  margin-left: 120px;
+  margin-left: 70px;
 }
 
 .main-chat .angle-down {
