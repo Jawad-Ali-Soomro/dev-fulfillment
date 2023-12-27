@@ -276,3 +276,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+const chat = document.querySelector(".main-chat");
+function showChat() {
+  chat.classList.add("main-chat-on");
+}
+
+function hideChat() {
+  chat.classList.remove("main-chat-on");
+}

@@ -98,7 +98,7 @@
               </ul>
       <i class="bi bi-x close-btn" onclick="closeMenu()"></i>
     </div>
-    <section id="hero" class="d-flex align-items-center">
+    <section id="hero" onclick="hideChat()" class="d-flex align-items-center">
       <div class="container">
         <div class="row">
           <div
@@ -133,7 +133,7 @@
     </section>
     <!-- End Hero -->
 
-    <main id="main">
+    <main onclick="hideChat()" id="main">
       <!-- ======= Clients Section ======= -->
 
       <!-- ======= About Us Section ======= -->
@@ -673,17 +673,16 @@
           <div
             class="d-flex flex-column flex-md-row justify-content-around align-items-md-end"
           >
-            <div class="card text-center border-0 mt-3 mt-md-0">
+            <div class="card text-center border-0 mt-3 mt-md-0" onclick="showChat()">
               <i
                 class="bi bi-chat-left-text-fill"
                 style="font-size: 100px; color: #37517e"
               ></i>
               <div class="card-body">
                 <div class="card-text">
-                  <a
-                    class="purple-link large-link text-center stretched-link"
-                    href="/get-started"
-                    >Live Chat</a
+                  <span
+                    class="purple-link large-link text-center stretched-link cursor-pointer"
+                    >Live Chat</span
                   >
                 </div>
               </div>
@@ -1132,7 +1131,7 @@
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
-      <div class="footer-newsletter">
+      <!-- <div class="footer-newsletter">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-6">
@@ -1150,7 +1149,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="footer-top">
         <div class="container">
@@ -1257,6 +1256,23 @@
       class="back-to-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
+
+    <div class="chat-option" onclick="showChat()">
+      <i class="bi bi-chat-right-text"></i>
+    </div>
+    <div class="main-chat">
+      <i class="bi bi-chevron-down angle-down"></i>
+      <div class="top">
+        <i class="bi bi-chat-right-text"></i>
+        <h1>Chat with us now</h1>
+      </div>
+      <form action="">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Enter Message Here"></textarea>
+        <button>Send Message</button>
+      </form>
+    </div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>

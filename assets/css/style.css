@@ -1556,6 +1556,7 @@ section {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
+  width: 100%;
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -5163,4 +5164,121 @@ h4 {
   color: white;
   font-size: 3rem;
   cursor: pointer;
+}
+
+.chat-option {
+  position: fixed;
+  bottom: 10vh;
+  width: 70px;
+  height: 70px;
+  background: #209dd8;
+  right: 10vh;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chat-option i {
+  color: white;
+  font-size: 2rem;
+}
+
+.main-chat {
+  width: 400px;
+  height: 70vh;
+  position: fixed;
+  bottom: 10vh;
+  right: 10vh;
+  background: white;
+  box-shadow: 0 0 10px black;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.main-chat-on {
+  max-height: 70vh;
+}
+
+.main-chat .top {
+  width: 100%;
+  height: 100px;
+  background-image: -moz-linear-gradient(
+    90deg,
+    rgb(0, 145, 255) 0%,
+    rgba(0, 145, 255, 0.9) 100%
+  );
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+form input,
+form textarea {
+  width: 80%;
+  height: 50px;
+  border: 1px solid #ccc;
+  background: #f4f4f4;
+  border: solid 1px #e3e3e3;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 10px;
+}
+
+form textarea {
+  height: 130px;
+  padding-top: 10px;
+}
+
+form button {
+  width: 200px;
+  height: 50px;
+  background: #209dd8;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  margin-left: 120px;
+}
+
+.main-chat .angle-down {
+  width: 60px;
+  height: 60px;
+  background: #209dd8;
+  position: absolute;
+  box-shadow: 0 0 2px black;
+  top: -100px;
+  right: 0;
+}
+
+.top i {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top h1 {
+  font-size: 25px;
+  font-weight: 600;
 }
