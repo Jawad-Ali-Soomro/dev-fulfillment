@@ -5118,7 +5118,7 @@ h4 {
   position: fixed;
   top: 0;
   left: 0;
-  background: #0c3c53;
+  background: #37517e;
   z-index: 99999;
   max-height: 0;
   transition: 0.3s;
@@ -5128,6 +5128,8 @@ h4 {
   flex-direction: column;
   overflow: hidden;
   gap: 20px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 
 .mobile-header-on {
@@ -5140,20 +5142,12 @@ h4 {
   flex-direction: column;
 }
 
-.mobile-header ul li {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.mobile-header ul li a {
+.mobile-header a {
   font-size: 1.1rem;
   color: white;
 }
 
-.mobile-header ul li button {
+.mobile-header button {
   width: 200px;
   height: 50px;
   border-radius: 25px;
