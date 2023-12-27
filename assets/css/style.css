@@ -5189,7 +5189,7 @@ h4 {
 
 .main-chat {
   width: 350px;
-  height: 80vh;
+  height: 100vh;
   position: fixed;
   bottom: 5vh;
   right: 5vh;
@@ -5203,6 +5203,12 @@ h4 {
 
 .main-chat-on {
   max-height: 80vh;
+}
+
+.main-chat-on .close-chat {
+  position: absolute;
+  top: -100px;
+  color: white;
 }
 
 .main-chat .top {
