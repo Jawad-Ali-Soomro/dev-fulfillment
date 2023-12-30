@@ -1261,7 +1261,7 @@
       <i class="bi bi-chat-right-text"></i>
     </div>
     <div class="main-chat">
-      <div class="top" style="background: -moz-linear-gradient( 90deg, rgb(0, 145, 255) 0%, rgba(0, 145, 255, 0.9) 100% );">
+      <div class="top" style="background: linear-gradient( 90deg, rgb(0, 145, 255) 0%, rgba(0, 145, 255, 0.9) 100% );">
         <i class="bi bi-chat-right-text" style="color: white;"></i>
         <h1 style="color: white;">Chat with us now</h1>
         <i class="bi bi-chevron-down" onclick="hideChat()" style="cursor: pointer;color: white;"></i>
@@ -1299,8 +1299,8 @@
   }
   function sendMessage(){
     alert('message send successfully we will contact you asap')
-  const username = document.getElementById("username").value
-  const email = document.getElementById("email")
+  const username = document.getElementById("username").value == ""
+  const email = document.getElementById("email") == ""
   const phone = document.getElementById("phone").value
   const message = document.querySelector(".message").value
   console.log(JSON.stringify(email.value));
