@@ -5185,7 +5185,7 @@ h4 {
 }
 
 .main-chat {
-  width: 350px;
+  width: 320px;
   height: 100vh;
   position: fixed;
   bottom: 5vh;
@@ -5221,6 +5221,12 @@ h4 {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.main-chat .top h1{
+  font-size: 1.2rem;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .form {
