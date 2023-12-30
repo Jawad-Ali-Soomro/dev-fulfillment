@@ -5287,3 +5287,15 @@ h4 {
   font-size: 25px;
   font-weight: 600;
 }
+
+
+@media (max-width:600px) {
+  .chat-option{
+    right: 2vh;
+    bottom: 5vh;
+  }
+  .main-chat{
+    right: 2vh;
+    bottom: 2vh;
+  }
+}
