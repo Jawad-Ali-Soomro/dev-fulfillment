@@ -5226,7 +5226,7 @@ h4 {
   gap: 10px;
 }
 
-form {
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5235,8 +5235,8 @@ form {
   padding-top: 20px;
 }
 
-form input,
-form textarea {
+.form input,
+.form textarea {
   width: 80%;
   height: 50px;
   border: 1px solid #ccc;
@@ -5247,12 +5247,12 @@ form textarea {
   border-radius: 10px;
 }
 
-form textarea {
+.form textarea {
   height: 130px;
   padding-top: 10px;
 }
 
-form button {
+.form button {
   width: 200px;
   height: 50px;
   background: #209dd8;
