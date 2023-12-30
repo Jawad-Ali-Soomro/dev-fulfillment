@@ -3341,7 +3341,7 @@ section {
 }
 
 .features .nav-link:hover {
-  color: navy !important;
+  /* color: navy !important; */
 }
 
 .features .nav-link.active {
