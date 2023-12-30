@@ -5294,6 +5294,9 @@ h4 {
     right: 2vh;
     bottom: 5vh;
   }
+  #header .logo img {
+    width: 150px;
+  }
   .main-chat{
     width: 320px;
     right: 2vh;
