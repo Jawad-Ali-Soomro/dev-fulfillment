@@ -1304,20 +1304,20 @@
   const phone = document.getElementById("phone").value
   const message = document.querySelector(".message").value
   console.log(JSON.stringify(email.value));
-  fetch('http://localhost:4000/create-message', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({username , email , phone , message}),
-    })
-    .then(response => response.json())
-    .then(result => {
-      alert('message send successfully we will contact you asap')
-      closeMenu()
-    })
-    .catch(error => {
-        alert('something went wrong')
-    });
+  // fetch('http://localhost:4000/create-message', {
+  //       method: 'POST',
+  //       headers: {
+  //           'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({username , email , phone , message}),
+  //   })
+  //   .then(response => response.json())
+  //   .then(result => {
+  //     alert('message send successfully we will contact you asap')
+  //     closeMenu()
+  //   })
+  //   .catch(error => {
+  //       alert('something went wrong')
+  //   });
   }
 </script>
