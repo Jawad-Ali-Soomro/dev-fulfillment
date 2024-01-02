@@ -5296,6 +5296,7 @@ h4 {
   }
   #header .logo img {
     width: 150px;
+    max-height: 40px;
   }
   .main-chat{
     width: 320px;
