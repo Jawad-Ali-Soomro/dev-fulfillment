@@ -2999,7 +2999,7 @@ section {
 }
 
 .about .nav-link.active {
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
   background: none;
   border-bottom: 3px solid var(--color-primary);
 }
@@ -3353,6 +3353,14 @@ section {
 
 .features .nav-link.active h4 {
   color: var(--color-white);
+}
+
+.features .nav-link.active:hover h4{
+  color: white;
+}
+
+.features .nav-link:hover h4{
+  color: #209dd8;
 }
 
 .features .nav-link.active i {
