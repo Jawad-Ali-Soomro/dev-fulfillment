@@ -114,17 +114,6 @@
     alert("hello");
     menu.classList.add("mobile-header-on");
   }
-  on(
-    "click",
-    ".navbar .dropdown > a",
-    function (e) {
-      if (select("#navbar").classList.contains("navbar-mobile")) {
-        e.preventDefault();
-        this.nextElementSibling.classList.toggle("dropdown-active");
-      }
-    },
-    true
-  );
 
   /**
    * Scrool with ofset on links with a class name .scrollto

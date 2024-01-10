@@ -1,6 +1,5 @@
 body {
   font-family: "Open Sans", sans-serif;
-  color: #47b2e4;
 }
 
 a {
@@ -1105,6 +1104,10 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team .member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -1129,7 +1132,16 @@ section {
 }
 
 .team .member .member-info {
-  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .team .member h4 {
@@ -1155,12 +1167,14 @@ section {
   height: 1px;
   background: #cbd6e9;
   bottom: 0;
-  left: 0;
+  left: calc(50% - 25px);
 }
 
 .team .member p {
   margin: 10px 0 0 0;
   font-size: 14px;
+  max-width: 300px;
+  text-align: center;
 }
 
 .team .member .social {
@@ -2026,8 +2040,8 @@ section {
 }
 
 .scroll-top:hover {
-  background: rgba(var(--color-primary-rgb), 0.85);
-  color: var(--color-white);
+  /* background: rgba(var(--color-primary-rgb), 0.85); */
+  color: #23a3df;
 }
 
 .scroll-top.active {
@@ -2170,7 +2184,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover > a {
-    color: var(--color-primary);
+    color: #23a3df;
   }
 
   .navbar .dropdown a:hover:before,
@@ -2999,7 +3013,7 @@ section {
 }
 
 .about .nav-link.active {
-  /* color: var(--color-primary); */
+  color: #209dd8;
   background: none;
   border-bottom: 3px solid var(--color-primary);
 }
@@ -3340,7 +3354,6 @@ section {
   color: var(--color-secondary);
 }
 
-
 .features .nav-link.active {
   transition: 0.3s;
   background: var(--color-secondary)
@@ -3355,12 +3368,12 @@ section {
   color: var(--color-white);
 }
 
-.features .nav-link.active:hover h4{
+.features .nav-link.active:hover h4 {
   color: white;
 }
 
-.features .nav-link:hover h4{
-  color: #209dd8;
+.features .nav-link:hover h4 {
+  color: black;
 }
 
 .features .nav-link.active i {
@@ -5296,9 +5309,8 @@ h4 {
   font-weight: 600;
 }
 
-
-@media (max-width:600px) {
-  .chat-option{
+@media (max-width: 600px) {
+  .chat-option {
     right: 2vh;
     bottom: 5vh;
   }
@@ -5306,15 +5318,14 @@ h4 {
     width: 150px;
     max-height: 40px;
   }
-  .main-chat{
+  .main-chat {
     width: 320px;
     right: 2vh;
     bottom: 2vh;
   }
-  .main-chat .top h1{
+  .main-chat .top h1 {
     font-size: 1.2rem;
     padding-left: 10px;
     padding-right: 10px;
   }
-  
 }
