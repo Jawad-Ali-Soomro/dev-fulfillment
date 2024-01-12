@@ -3329,7 +3329,8 @@ section {
 
 .features .nav-link {
   border: 0;
-  padding: 25px 20px;
+  width: 150px;
+  height: 150px;
   color: var(--color-secondary);
   box-shadow: 5px 5px 25px rgba(var(--color-secondary-rgb), 0.15);
   border-radius: 0;
